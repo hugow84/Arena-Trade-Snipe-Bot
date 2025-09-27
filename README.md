@@ -1,10 +1,11 @@
 # Arena Snipe
 
-A token sniper for Avalanche blockchain targeting specific token factory contracts.
+A token sniper for Avalanche blockchain targeting [Arena Trade](https://arena.trade/tokens), a bonding curve type token launcher with initial virtual liquidity which is then deployed on the Arena DEX with 'real' liquidity pool once a cap is reached. The launcher is a feature of the web social plateform [Arena](https://arena.social/home) ([X account](https://x.com/TheArenaApp)). This launcher could be seen as Avalanche equivalent of the famous pump.fun with an extra social layer on the top. 
 
 ## Overview
 
-Arena Snipe is designed to detect and analyze new token creations on the Avalanche blockchain, specifically monitoring the token factory contract at `0x2196E106Af476f57618373ec028924767c758464`.
+Arena Snipe is designed to detect and analyze new token creations on the Avalanche blockchain, specifically monitoring the token factory contract at `0x2196E106Af476f57618373ec028924767c758464`. (only work for $ARENA paired token, to regular $AVAX paired token refer to `0x8315f1eb449Dd4B779495C3A0b05e5d194446c6e` contract)
+In this version, it purchases every token for which the specified wallet is whitelisted, but it can easily be adapted to buy based on the caller’s address, token name, token symbol, or other more sophisticated conditions.
 
 ## Features
 
